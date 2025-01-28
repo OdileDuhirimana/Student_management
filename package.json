@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/OdileDuhirimana/Student_management/issues"
   },
-  "homepage": "https://github.com/OdileDuhirimana/Student_management#readme"
+  "homepage": "https://github.com/OdileDuhirimana/Student_management#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
 }
