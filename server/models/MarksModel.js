@@ -1,6 +1,6 @@
-import { DataTypes } from 'sequelize';
+const { DataTypes } = require('sequelize');
 
-export default (sequelize) => {
+module.exports = (sequelize) => {
   const Marks = sequelize.define(
     'Marks',
     {
@@ -29,7 +29,7 @@ export default (sequelize) => {
     Marks.belongsTo(models.Course, {
       foreignKey: 'courseId',
       as: 'course',
-      onDelete: 'CASCADE', // also marks are deleted when a course which related to it is deleted
+      onDelete: 'CASCADE', // Marks are deleted when the related course is deleted
     });
   };
 
